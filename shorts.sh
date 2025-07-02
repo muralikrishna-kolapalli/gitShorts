@@ -64,7 +64,7 @@ alias c='clear'
 alias mybash='cat ~/.bashrc' 
 
 #docker
-alias lkosh='docker run -e POSTGRES_USER=<username> -e POSTGRES_PASSWORD=<password> -e POSTGRES_DB=<database_name> -p 5432:5432 -v "/<path to backup>:/var/lib/postgresql/data" postgres:latest'
+alias localdb='docker run -e POSTGRES_USER=<username> -e POSTGRES_PASSWORD=<password> -e POSTGRES_DB=<database_name> -p 5432:5432 -v "/<path to backup>:/var/lib/postgresql/data" postgres:latest'
 alias dup='docker-compose up --build -d'
 alias dwn='docker-compose down'
 alias dlog='docker exec -it <conatiner_name> bash'
